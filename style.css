@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --fonte-alkatra: 'Alkatra', 'cursive';
+    --fonte-roboto: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left, blue, orangered, yellow);
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+    overflow-x: hidden;
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+div#titulo {
+   width: 550px;
+    text-align: center;
+    height: 48px;
+    margin: 92px auto 0px;
+}
+
+h1#titprincipal {
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+
+div#principal {
+    width: 425px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+div#principal a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+
+div#principal a:hover {
+    text-decoration: underline;
+    font-size: 19px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+}
+
+div#principal p {
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin: 187px 0px 0px 0px;
+    padding-top: 37px;
+}
+
+footer p {
+    font-family: var(--fonte-roboto);
+}
+
+footer a {
+    text-decoration: none;
+    color: #FF0000;
+    font-family: var(--fonte-alkatra);
+    margin-left: 6px;
+}
+
+footer a:hover {
+    color: #FFFF00;
+    transition-duration: 1s;
+}
